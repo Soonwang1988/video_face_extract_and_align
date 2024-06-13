@@ -3,7 +3,7 @@
 
 ###### create environment
 ```
-conda env create -f environment_py39_a100.yml
+conda env create -f deepfacelab.yml
 ```
 
 
