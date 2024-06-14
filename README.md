@@ -13,6 +13,10 @@ conda deactivate
 conda activate deepfacelab
 ```
 
+###### extract frames
+```
+python frame_extract.py <mp4 file path> <output path>
+```
 
 ###### extract and align face
 ```
