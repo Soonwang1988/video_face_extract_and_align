@@ -219,11 +219,11 @@ class ExtractSubprocessor(Subprocessor):
                 cv2_imwrite(output_filepath, face_image, [int(cv2.IMWRITE_JPEG_QUALITY), jpeg_quality ] )
 
                 data_dict = {
-                    "og_image_shape": image.shape,
+                    "original_img_shape": image.shape,
                     "face_type": FaceType.toString(face_type),
-                    "landmarks": FaceType.toString(face_type),
+                    "original_img_face_landmarks": image_landmarks.tolist(),
                     "source_rect": rect.tolist(),
-                    "set_source_landmarks": face_image_landmarks.tolist(),
+                    "aligned_face_landmarks": face_image_landmarks.tolist(),
                     "image_2_face_mat": image_to_face_mat.tolist()
 
                 }
